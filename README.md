@@ -33,6 +33,4 @@ pytest jmeno_tveho_souboru.py
 * Fixture (custom_page): Používáme vlastní fixture s nastavením slow_mo=2000 (zpomalení o 2 sekundy), aby bylo možné vizuálně sledovat průběh kroků.
 * Scope: Fixture je nastavena na scope="session", což znamená, že prohlížeč se otevře jednou pro celou sadu testů.
 
-------------------------------
-Chceš do README doplnit i sekci o tom, jak interpretovat výsledky, nebo stačí tento technický základ?
 
