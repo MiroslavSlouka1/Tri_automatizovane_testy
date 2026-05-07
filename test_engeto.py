@@ -9,7 +9,7 @@ def custom_page():
         page = browser.new_page()
         yield page
 
-# Test zobrazeni title
+# Test zobrazení title
 def test_title(custom_page):
     custom_page.goto("https://engeto.cz/")
     expected_title = "Kurzy programování a dalších IT technologií | ENGETO"
@@ -21,9 +21,7 @@ def test_cookisclick(custom_page):
     custom_page.click("#cookiescript_accept")
     expect(custom_page.locator("#cookiescript_injected")).to_be_hidden()
 
-
-
-# Test zadani spatneho mailu
+# Test zadaní špatného mailu
 def test_bad_mail_input(custom_page):
     custom_page.goto("https://engeto.cz/")
 
