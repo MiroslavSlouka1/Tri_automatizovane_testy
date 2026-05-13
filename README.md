@@ -24,13 +24,8 @@ pytest jmeno_tveho_souboru.py
 
 ## Užitečné parametry:
 
-* --headed: Pokud chceš vidět prohlížeč v akci (v kódu je sice nastaven headless=False, ale tímto to vynutíš globálně).
+* $env:PWDEBUG=1; pytest: Pokud chceš vidět prohlížeč v akci.
 * -v: Podrobnější výpis výsledků (verbose).
 
-## ⚙️ Technické detaily
-
-* Browser: Testy běží ve Firefoxu.
-* Fixture (custom_page): Používáme vlastní fixture s nastavením slow_mo=2000 (zpomalení o 2 sekundy), aby bylo možné vizuálně sledovat průběh kroků.
-* Scope: Fixture je nastavena na scope="session", což znamená, že prohlížeč se otevře jednou pro celou sadu testů.
 
 
